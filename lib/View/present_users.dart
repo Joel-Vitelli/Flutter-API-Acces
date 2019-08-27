@@ -113,14 +113,16 @@ class PresentUsers extends StatelessWidget {
     return Row(
       children: <Widget>[
         image,
-        Column(
-          children: <Widget>[
-            nameDev,
-            usernameS,
-            emailS,
-            phoneS,
-            websiteS
-          ],
+        Expanded(
+          child: Column(
+            children: <Widget>[
+              nameDev,
+              usernameS,
+              emailS,
+              phoneS,
+              websiteS
+            ],
+          ),
         ),
         icono_mail_open
       ],
